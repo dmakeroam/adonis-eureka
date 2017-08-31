@@ -1,0 +1,18 @@
+{
+  "name": "adonis-eureka",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node examples/EurekaExample.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@adonisjs/fold": "^4.0.2"
+  },
+  "dependencies": {
+    "eureka-js-client": "^4.3.0"
+  }
+}
