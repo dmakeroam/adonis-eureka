@@ -15,14 +15,14 @@ Built on top of [eureka-js-client](https://github.com/jquatier/eureka-js-client)
 #### Install via adonis
 
 ```shell
-$ adonis install @mig-frankfurt/???
+$ adonis install @mig-frankfurt/adonis-eureka
 ```
 
 #### Register Provider
 
 ```javascript
 const providers = [
-  '@mig-frankfurt/???/providers/EurekaProvider'
+  '@mig-frankfurt/adonis-eureka/providers/EurekaProvider'
 ]
 ```
 

@@ -1,18 +1,26 @@
 {
   "name": "adonis-eureka",
   "version": "0.0.1",
-  "description": "",
+  "description": "ServiceProvider for registering an AdonisJs Application with Netflix Eureka",
   "main": "index.js",
   "scripts": {
     "dev": "node examples/EurekaExample.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Patric Vormstein <vormstein@med.uni-frankfurt.de>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mig-frankfurt/adonis-eureka/"
+  },
   "devDependencies": {
     "@adonisjs/fold": "^4.0.2"
   },
   "dependencies": {
     "eureka-js-client": "^4.3.0"
+  },
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 3.0.0"
   }
 }
