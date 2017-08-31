@@ -25,7 +25,7 @@ module.exports = {
   */
   server: {
     host: Env.get('EUREKA_SERVER_HOST') || 'localhost',
-    port: Env.get('EUREKA_SERVER_POST') || 8761,
+    port: Env.get('EUREKA_SERVER_PORT') || 8761,
     servicePath: Env.get('EUREKA_SERVER_SERVICE_PATH') || '/eureka/apps/'
   },
   
