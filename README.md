@@ -36,10 +36,10 @@ If not already existent, create `/start/hooks.js`
 
 ```js
 const { hooks } = require('@adonisjs/ignitor')
-const Eureka = use('MigFrankfurt/Adonis/Eureka')
 
 hooks.after.httpServer(() => {
-    // TODO
+  const Eureka = use('MigFrankfurt/Adonis/Eureka')
+  Eureka.start()
 })
 ```
 
