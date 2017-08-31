@@ -4,7 +4,7 @@ const { ServiceProvider } = require('@adonisjs/fold')
 
 class EurekaProvider extends ServiceProvider {
   register () {
-    this.app.bind('MigFrankfurt/Eureka', () => require('../src/Eureka'))
+    this.app.bind('MigFrankfurt/Adonis/Eureka', () => require('../src/Eureka'))
   }
   
   boot () {
