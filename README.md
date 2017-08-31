@@ -43,6 +43,10 @@ hooks.after.httpServer(() => {
 })
 ```
 
+## :wrench: Settings
+
+Settings will be copied during installation to `/config/eureka.js`
+
 ## :hospital: Developed by
 
 Medical Informatics Group (MIG)\
