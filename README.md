@@ -2,11 +2,11 @@
 
 > :package: ServiceProvider for registering an AdonisJs Application with Netflix Eureka
 
-**:warning: This package is under heavy development!**
-
-Adonis Eureka is a Service Provider for registering an AdonisJs 4 application with [Eureka built by Netflix](https://github.com/Netflix/eureka). It also works with the :leaves: Spring Cloud powered version of Eureka.
+Adonis Eureka is a Service Provider for registering an AdonisJs 4 application with [Eureka built by Netflix](https://github.com/Netflix/eureka). It also works with the Spring Cloud powered version of Eureka.
 
 Built on top of [eureka-js-client](https://github.com/jquatier/eureka-js-client) for Node.js. 
+
+**:warning: NOTE: This package is under heavy development!**
 
 ## :hand: Requirements
  - AdonisJs >= 4.0
