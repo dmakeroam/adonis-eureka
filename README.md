@@ -1,4 +1,4 @@
-# Adonis Eureka
+# Adonis Eureka [![npm (scoped)](https://img.shields.io/npm/v/@mig-frankfurt/adonis-eureka.svg?style=flat-square)](https://www.npmjs.com/package/@mig-frankfurtadonis-eureka) [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/mig-frankfurt/adonis-eureka/blob/master/LICENSE.txt)
 
 > :package: ServiceProvider for registering an AdonisJs Application with Netflix Eureka
 
