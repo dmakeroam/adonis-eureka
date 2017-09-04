@@ -60,7 +60,7 @@ Config will be copied during installation to `/config/eureka.js`
 | eureka.instance.ipAddr | EUREKA_INSTANCE_IP_ADDRESS | '127.0.0.1' | IP address of the instance |
 | eureka.instance.port | EUREKA_INSTANCE_PORT | 4444 | Port of the instance |
 | eureka.instance.vipAddr | EUREKA_INSTANCE_VIP_ADDRESSS | 'adonisjs.instance' | Vip address of the instance |
-| eureka.insatnce.dataCenterInfoName | EUREKA_INSTANCE_DATACENTER_INFO_NAME | 'MyOwn' | Datacenter Info Name of the Instance |
+| eureka.instance.dataCenterInfoName | EUREKA_INSTANCE_DATACENTER_INFO_NAME | 'MyOwn' | Datacenter Info Name of the Instance |
 
 ## :satellite: Api
 
