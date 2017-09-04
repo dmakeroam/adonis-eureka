@@ -43,9 +43,22 @@ hooks.after.httpServer(() => {
 })
 ```
 
-## :wrench: Settings
+## :wrench: Configuration
 
-Settings will be copied during installation to `/config/eureka.js`
+Config will be copied during installation to `/config/eureka.js`
+
+| Key | Env | Default | Description |
+| --- | --- | --- | --- |
+| eureka.server.host | EUREKA_SERVER_HOST | 'localhost' | Hostname of the Eureka Server |
+| eureka.server.port | EUREKA_SERVER_PORT | 8761 | Port of the Eureka Server  |
+| eureka.server.servicePath | EUREKA_SERVER_SERVICE_PATH | '/eureka/apps/' | ServicePath of the Eureka Server|
+|||||
+| eureka.instance.appName | EUREKA_INSTANCE_APP_NAME | 'AdonisJs Instance' | Instance name shown in Eureka |
+| eureka.instance.hostname | EUREKA_INSTANCE_HOSTNAME | 'localhost' | Hostname of the instance |
+| eureka.instance.ipAddr | EUREKA_INSTANCE_IP_ADDRESS | '127.0.0.1' | IP address of the instance |
+| eureka.instance.port | EUREKA_INSTANCE_PORT | 4444 | Port of the instance |
+| eureka.instance.vipAddr | EUREKA_INSTANCE_VIP_ADDRESSS | 'adonisjs.instance' | Vip address of the instance |
+| eureka.insatnce.dataCenterInfoName | EUREKA_INSTANCE_DATACENTER_INFO_NAME | 'MyOwn' | Datacenter Info Name of the Instance |
 
 ## :hospital: Developed by
 

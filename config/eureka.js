@@ -43,7 +43,7 @@ module.exports = {
     hostname: Env.get('EUREKA_INSTANCE_HOSTNAME') || 'localhost',
     ipAddr: Env.get('EUREKA_INSTANCE_IP_ADDRESS') || '127.0.0.1',
     port: Env.get('EUREKA_INSTANCE_PORT') || 4444,
-    vipAddress: Env.get('EUREKA_INSTANCE_VIP_ADDRESS') || 'adonisjs.instance',
+    vipAddr: Env.get('EUREKA_INSTANCE_VIP_ADDRESS') || 'adonisjs.instance',
     dataCenterInfoName: Env.get('EUREKA_INSTANCE_DATACENTER_INFO_NAME') || 'MyOwn'
   }
 }
