@@ -82,16 +82,18 @@ Eureka.stop()
 
 ```js
 const Eureka = use('MigFrankfurt/Adonis/Eureka')
-Eureka.getInstances('SERVICENAME') // if eureka.defaultAccessMethod === 'byAppName'
-Eureka.getInstancesByAppName('SERVICENAME')
+const instances = Eureka.getInstances('SERVICENAME') // if eureka.defaultAccessMethod === 'byAppName'
+// or
+const instances = Eureka.getInstancesByAppName('SERVICENAME')
 ```
 
 #### Get instances by vip address
 
 ```js
 const Eureka = use('MigFrankfurt/Adonis/Eureka')
-Eureka.getInstances('VIPADDR') // if eureka.defaultAccessMethod === 'byVipAddr'
-Eureka.getInstancesByVipAddr('VIPADDR')
+const instances = Eureka.getInstances('VIPADDR') // if eureka.defaultAccessMethod === 'byVipAddr'
+// or
+const instances = Eureka.getInstancesByVipAddr('VIPADDR')
 ```
 
 ## :hospital: Developed by
