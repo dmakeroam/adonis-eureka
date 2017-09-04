@@ -62,6 +62,38 @@ Config will be copied during installation to `/config/eureka.js`
 | eureka.instance.vipAddr | EUREKA_INSTANCE_VIP_ADDRESSS | 'adonisjs.instance' | Vip address of the instance |
 | eureka.insatnce.dataCenterInfoName | EUREKA_INSTANCE_DATACENTER_INFO_NAME | 'MyOwn' | Datacenter Info Name of the Instance |
 
+## :satellite: Api
+
+#### Start Eureka
+
+```js
+const Eureka = use('MigFrankfurt/Adonis/Eureka')
+Eureka.start()
+```
+
+#### Stop Eureka
+
+```js
+const Eureka = use('MigFrankfurt/Adonis/Eureka')
+Eureka.stop()
+```
+
+#### Get instances by app name
+
+```js
+const Eureka = use('MigFrankfurt/Adonis/Eureka')
+Eureka.getInstances('SERVICENAME') // if eureka.defaultAccessMethod === 'byAppName'
+Eureka.getInstancesByAppName('SERVICENAME')
+```
+
+#### Get instances by vip address
+
+```js
+const Eureka = use('MigFrankfurt/Adonis/Eureka')
+Eureka.getInstances('VIPADDR') // if eureka.defaultAccessMethod === 'byVipAddr'
+Eureka.getInstancesByVipAddr('VIPADDR')
+```
+
 ## :hospital: Developed by
 
 Medical Informatics Group (MIG)\
