@@ -1,6 +1,6 @@
 {
   "name": "@mig-frankfurt/adonis-eureka",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "ServiceProvider for registering an AdonisJs Application with Netflix Eureka",
   "main": "index.js",
   "scripts": {

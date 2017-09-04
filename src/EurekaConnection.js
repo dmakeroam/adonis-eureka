@@ -18,7 +18,7 @@ class EurekaConnection extends Eureka {
           '$': Config.get('eureka.instance.port'),
           '@enabled': true
         },
-        vipAddress: Config.get('eureka.instance.vipAddress'),
+        vipAddress: Config.get('eureka.instance.vipAddr'),
         dataCenterInfo: {
           '@class': 'com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo',
           name: Config.get('eureka.instance.dataCenterInfoName')
