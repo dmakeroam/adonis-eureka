@@ -8,10 +8,7 @@ class EurekaConnection extends Eureka {
     return ['Adonis/Src/Config']
   }
   
-  constructor(Config) {
-    
-    this.defaultAccessMethod = Config.get('eureka.defaultAccessMethod')
-    
+  constructor(Config) {    
     super({
       instance: {
         app: Config.get('eureka.instance.appName'),
@@ -34,6 +31,8 @@ class EurekaConnection extends Eureka {
         servicePath: Config.get('eureka.server.servicePath')
       }
     })
+    
+    this.defaultAccessMethod = Config.get('eureka.defaultAccessMethod')
   }
 }
 

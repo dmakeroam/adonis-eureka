@@ -4,6 +4,8 @@ class ConfigProvider {
   static get (key) {
     const fakeEurekaConfig = {
       eureka: {
+        defaultAccessMethod: 'byAppName',
+        
         server: {
           host: 'localhost',
           port: 8761,
