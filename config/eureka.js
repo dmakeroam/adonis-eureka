@@ -20,7 +20,7 @@ module.exports = {
   |--------------------------------------------------------------------------
   |
   | How to access other instances (by the getInstances method).
-  | Possible are 'byAppName' or 'viaVipAddr'.
+  | Possible are 'byAppName' or 'byVipAddr'.
   |
   */
   defaultAccessMethod: Env.get('EUREKA_DEFAULT_ACCESS_METHOD') || 'byAppName',

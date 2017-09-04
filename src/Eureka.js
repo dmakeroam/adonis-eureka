@@ -24,11 +24,11 @@ class Eureka {
   }
   
   static getInstancesByAppName (appName) {
-    Eureka._client.getInstancesByAppId(appName)
+    return Eureka._client.getInstancesByAppId(appName)
   }
   
   static getInstancesByVipAddr (vipAddr) {
-    Eureka._client.getInstancesByVipAddress(vipAddr)
+    return Eureka._client.getInstancesByVipAddress(vipAddr)
   }
   
   static get client () {
