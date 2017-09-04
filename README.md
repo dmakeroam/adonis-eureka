@@ -49,6 +49,8 @@ Config will be copied during installation to `/config/eureka.js`
 
 | Key | Env | Default | Description |
 | --- | --- | --- | --- |
+| eureka.defaultAccessMethod | EUREKA_DEFAULT_ACCESS_METHOD | 'byAppName' | Define the default access method for other instances. Possible: 'byAppName' or 'viaIpAddr' |
+|||||
 | eureka.server.host | EUREKA_SERVER_HOST | 'localhost' | Hostname of the Eureka Server |
 | eureka.server.port | EUREKA_SERVER_PORT | 8761 | Port of the Eureka Server  |
 | eureka.server.servicePath | EUREKA_SERVER_SERVICE_PATH | '/eureka/apps/' | ServicePath of the Eureka Server|

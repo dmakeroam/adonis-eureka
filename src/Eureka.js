@@ -15,6 +15,22 @@ class Eureka {
     Eureka._client.stop()
   }
   
+  static getInstances (appNameOrVipAddr) {
+    if (Eureka._client.defaultAccessMethod === 'byAppName') {
+      return Eureka.getInstancesByAppName(appNameOrVipAddr)
+    }
+    
+    return Eureka.getInstancesByVipAddr(appNameOrVipAddr)
+  }
+  
+  static getInstancesByAppName (appName) {
+    Eureka._client.getInstancesByAppId(appName)
+  }
+  
+  static getInstancesByVipAddr (vipAddr) {
+    Eureka._client.getInstancesByVipAddress(vipAddr)
+  }
+  
   static get client () {
     return Eureka._client
   }
