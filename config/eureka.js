@@ -23,7 +23,7 @@ module.exports = {
   | Possible are 'byAppName' or 'byVipAddr'.
   |
   */
-  defaultAccessMethod: Env.get('EUREKA_DEFAULT_ACCESS_METHOD') || 'byAppName',
+  defaultAccessMethod: Env.get('EUREKA_DEFAULT_ACCESS_METHOD', 'byAppName'),
   
   /*
   |--------------------------------------------------------------------------
@@ -35,9 +35,9 @@ module.exports = {
   |
   */
   server: {
-    host: Env.get('EUREKA_SERVER_HOST') || 'localhost',
-    port: Env.get('EUREKA_SERVER_PORT') || 8761,
-    servicePath: Env.get('EUREKA_SERVER_SERVICE_PATH') || '/eureka/apps/'
+    host: Env.get('EUREKA_SERVER_HOST', 'localhost'),
+    port: Env.get('EUREKA_SERVER_PORT', 8761),
+    servicePath: Env.get('EUREKA_SERVER_SERVICE_PATH', '/eureka/apps/')
   },
   
   /*
@@ -50,11 +50,11 @@ module.exports = {
   |
   */
   instance: {
-    appName: Env.get('EUREKA_INSTANCE_APP_NAME') || 'AdonisJs Instance',
-    hostname: Env.get('EUREKA_INSTANCE_HOSTNAME') || 'localhost',
-    ipAddr: Env.get('EUREKA_INSTANCE_IP_ADDRESS') || '127.0.0.1',
-    port: Env.get('EUREKA_INSTANCE_PORT') || 4444,
-    vipAddr: Env.get('EUREKA_INSTANCE_VIP_ADDRESS') || 'adonisjs.instance',
-    dataCenterInfoName: Env.get('EUREKA_INSTANCE_DATACENTER_INFO_NAME') || 'MyOwn'
+    appName: Env.get('EUREKA_INSTANCE_APP_NAME', 'AdonisJs Instance'),
+    hostname: Env.get('EUREKA_INSTANCE_HOSTNAME', 'localhost'),
+    ipAddr: Env.get('EUREKA_INSTANCE_IP_ADDRESS', '127.0.0.1'),
+    port: Env.get('EUREKA_INSTANCE_PORT', 4444),
+    vipAddr: Env.get('EUREKA_INSTANCE_VIP_ADDRESS', 'adonisjs.instance'),
+    dataCenterInfoName: Env.get('EUREKA_INSTANCE_DATACENTER_INFO_NAME', 'MyOwn')
   }
 }
