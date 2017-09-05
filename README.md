@@ -57,8 +57,8 @@ Config will be copied during installation to `/config/eureka.js`
 |||||
 | eureka.instance.appName | EUREKA_INSTANCE_APP_NAME | 'AdonisJs Instance' | Instance name shown in Eureka |
 | eureka.instance.hostname | EUREKA_INSTANCE_HOSTNAME | 'localhost' | Hostname of the instance |
-| eureka.instance.ipAddr | EUREKA_INSTANCE_IP_ADDRESS | '127.0.0.1' | IP address of the instance |
-| eureka.instance.port | EUREKA_INSTANCE_PORT | 4444 | Port of the instance |
+| eureka.instance.ipAddr | EUREKA_INSTANCE_IP_ADDRESS | ENV('HOST') | IP address of the instance |
+| eureka.instance.port | EUREKA_INSTANCE_PORT | ENV('PORT') | Port of the instance |
 | eureka.instance.vipAddr | EUREKA_INSTANCE_VIP_ADDRESSS | 'adonisjs.instance' | Vip address of the instance |
 | eureka.instance.dataCenterInfoName | EUREKA_INSTANCE_DATACENTER_INFO_NAME | 'MyOwn' | Datacenter Info Name of the Instance |
 
