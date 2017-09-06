@@ -96,6 +96,14 @@ const instances = Eureka.getInstances('VIPADDR') // if eureka.defaultAccessMetho
 const instances = Eureka.getInstancesByVipAddr('VIPADDR')
 ```
 
+## :heavy_check_mark: :x: Tests
+
+:exclamation: **The tests do need a running instance of Eureka**
+
+```js
+$ npm run test
+```
+
 ## :hospital: Developed by
 
 Medical Informatics Group (MIG)\
