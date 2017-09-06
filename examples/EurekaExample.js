@@ -6,8 +6,34 @@ const { ioc } = require('@adonisjs/fold')
 
 // Bind
 ioc.bind('Adonis/Src/Config', () => {
-  return require('./ConfigProvider')
+  const { Config } = require('adonis-sink')
+  let config = new Config()
+  config.set('eureka', {
+    defaultAccessMethod: 'byAppName',
+
+    server: {
+      host: 'localhost',
+      port: 8761,
+      servicePath: '/eureka/apps/'
+    },
+
+    instance: {
+      appName: 'AdonisJs Instance',
+      hostname: 'localhost',
+      ipAddr: '127.0.0.1',
+      port: 4444,
+      vipAddr: 'adonisjs.instance',
+      dataCenterInfoName: 'MyOwn'
+    }
+  })
+  
+  return config
 })
+
+// Consts 
+const hostname = 'localhost' 
+const ipAddr = '127.0.0.1' 
+const port = 4444 
 
 // Eureka Config
 Eureka.configure()

@@ -8,7 +8,7 @@ class EurekaConnection extends Eureka {
     return ['Adonis/Src/Config']
   }
   
-  constructor(Config) {    
+  constructor(Config) {
     super({
       instance: {
         app: Config.get('eureka.instance.appName'),

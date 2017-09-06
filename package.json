@@ -14,7 +14,10 @@
     "url": "https://github.com/mig-frankfurt/adonis-eureka/"
   },
   "devDependencies": {
-    "@adonisjs/fold": "^4.0.2"
+    "@adonisjs/fold": "^4.0.2",
+    "adonis-sink": "^1.0.6",
+    "japa": "^1.0.4",
+    "japa-cli": "^1.0.1"
   },
   "dependencies": {
     "eureka-js-client": "^4.3.0"
