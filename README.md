@@ -96,7 +96,7 @@ const instances = Eureka.getInstances('VIPADDR') // if eureka.defaultAccessMetho
 const instances = Eureka.getInstancesByVipAddr('VIPADDR')
 ```
 
-## :heavy_check_mark: :x: Tests
+## :heavy_check_mark: Tests
 
 :exclamation: **The tests do need a running instance of Eureka**
 
