@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node examples/EurekaExample.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/japa"
   },
   "author": "Patric Vormstein <vormstein@med.uni-frankfurt.de>",
   "license": "MIT",
