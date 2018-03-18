@@ -25,7 +25,10 @@ test.group('Eureka config tests', (group) => {
         server: {
           host: this.env.get('EUREKA_SERVER_HOST', 'localhost'),
           port: this.env.get('EUREKA_SERVER_PORT', 8761),
-          servicePath: this.env.get('EUREKA_SERVER_SERVICE_PATH', '/eureka/apps/')
+          servicePath: this.env.get('EUREKA_SERVER_SERVICE_PATH', '/eureka/apps/'),
+          heartbeatInterval: this.env.get('EUREKA_SERVER_HEARTBEAT_INTERVAL',2000),
+          registryFetchInterval: this.env.get('EUREKA_SERVER_REGISTRY_FETCH_INTERVAL',2000),
+          maxRetries: this.env.get('EUREKA_SERVER_MAX_RETRIES',2)
         },
 
         instance: {
@@ -51,6 +54,9 @@ test.group('Eureka config tests', (group) => {
     assert.equal(client.config.eureka.host, 'localhost')
     assert.equal(client.config.eureka.port, '8761')
     assert.equal(client.config.eureka.servicePath, '/eureka/apps/')
+    assert.equal(client.config.eureka.heartbeatInterval, 2000)
+    assert.equal(client.config.eureka.registryFetchInterval, 2000)
+    assert.equal(client.config.eureka.maxRetries, 2)
     assert.equal(client.config.instance.app, 'AdonisJs Instance')
     assert.equal(client.config.instance.hostName, 'localhost')
     assert.equal(client.config.instance.port['$'], '6666')
@@ -67,6 +73,9 @@ test.group('Eureka config tests', (group) => {
     this.env.set('EUREKA_INSTANCE_APP_NAME', 'Cool Instance')
     this.env.set('EUREKA_INSTANCE_VIP_ADDRESS', 'cool.adonisjs')
     this.env.set('EUREKA_INSTANCE_DATACENTER_INFO_NAME', 'Another')
+    this.env.set('EUREKA_SERVER_HEARTBEAT_INTERVAL',3000)
+    this.env.set('EUREKA_SERVER_REGISTRY_FETCH_INTERVAL',3000)
+    this.env.set('EUREKA_SERVER_MAX_RETRIES',3)
 
     // Create Eureka client
     let client = createEurekaClient()
@@ -76,6 +85,9 @@ test.group('Eureka config tests', (group) => {
     assert.equal(client.config.eureka.host, 'localhost')
     assert.equal(client.config.eureka.port, '8761')
     assert.equal(client.config.eureka.servicePath, '/eureka/apps/')
+    assert.equal(client.config.eureka.heartbeatInterval, 3000)
+    assert.equal(client.config.eureka.registryFetchInterval, 3000)
+    assert.equal(client.config.eureka.maxRetries, 3)
     assert.equal(client.config.instance.app, 'Cool Instance')
     assert.equal(client.config.instance.hostName, 'localhost')
     assert.equal(client.config.instance.port['$'], '6666')

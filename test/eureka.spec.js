@@ -47,7 +47,10 @@ test.group('Eureka connection tests', (group) => {
         server: {
           host: 'localhost',
           port: 8761,
-          servicePath: '/eureka/apps/'
+          servicePath: '/eureka/apps/',
+          heartbeatInterval: 2000,
+          registryFetchInterval: 2000,
+          maxRetries: 2,
         },
 
         instance: {
