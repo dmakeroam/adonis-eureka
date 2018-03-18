@@ -28,7 +28,10 @@ class EurekaConnection extends Eureka {
         // eureka server host / port
         host: Config.get('eureka.server.host'),
         port: Config.get('eureka.server.port'),
-        servicePath: Config.get('eureka.server.servicePath')
+        servicePath: Config.get('eureka.server.servicePath'),
+        heartbeatInterval: Config.get('eureka.server.heartbeatInterval'),
+        registryFetchInterval: Config.get('eureka.server.registryFetchInterval'),
+        maxRetries: Config.get('eureka.server.maxRetries'),
       }
     })
     

@@ -37,7 +37,10 @@ module.exports = {
   server: {
     host: Env.get('EUREKA_SERVER_HOST', 'localhost'),
     port: Env.get('EUREKA_SERVER_PORT', 8761),
-    servicePath: Env.get('EUREKA_SERVER_SERVICE_PATH', '/eureka/apps/')
+    servicePath: Env.get('EUREKA_SERVER_SERVICE_PATH', '/eureka/apps/'),
+    heartbeatInterval: Env.get('EUREKA_SERVER_HEARTBEAT_INTERVAL', 2000),
+    registryFetchInterval: Env.get('EUREKA_SERVER_REGISTRY_FETCH_INTERVAL', 2000),
+    maxRetries: Env.get('EUREKA_SERVER_MAX_RETRIES', 2)
   },
   
   /*

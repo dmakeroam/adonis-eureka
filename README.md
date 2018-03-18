@@ -54,6 +54,9 @@ Config will be copied during installation to `/config/eureka.js`
 | eureka.server.host | EUREKA_SERVER_HOST | 'localhost' | Hostname of the Eureka Server |
 | eureka.server.port | EUREKA_SERVER_PORT | 8761 | Port of the Eureka Server  |
 | eureka.server.servicePath | EUREKA_SERVER_SERVICE_PATH | '/eureka/apps/' | ServicePath of the Eureka Server|
+| eureka.server.heartbeatInterval | EUREKA_SERVER_HEARTBEAT_INTERVAL | 2000 | Milliseconds to wait between heartbeats |
+| eureka.server.registryFetchInterval | EUREKA_SERVER_REGISTRY_FETCH_INTERVAL | 2000 | Milliseconds to wait between registry fetches |
+| eureka.server.maxRetries | EUREKA_SERVER_MAX_RETRIES | 2 | Number of times to retry all requests to eureka |
 |||||
 | eureka.instance.appName | EUREKA_INSTANCE_APP_NAME | 'AdonisJs Instance' | Instance name shown in Eureka |
 | eureka.instance.hostname | EUREKA_INSTANCE_HOSTNAME | 'localhost' | Hostname of the instance |
